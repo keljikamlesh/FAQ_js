@@ -1,0 +1,13 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body {height: 100vh; display: flex; align-items: center; justify-content: center; background: #f6f7fb; }
+::selection {color: #fff; background-color: #7d2ae8; }
+.container {padding: 2rem 20px; border-radius: 14px; background: #fff; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+
+.faq-wrp {width:700px;}
+.faq-ul {width:100%;}
+.faq-li {width:100%; border-bottom: 1px solid #f2f2f2;width: 100%; padding: 15px 0; }
+.faq-head {width:100%;display:flex;cursor: pointer; }
+.faq-head.active ~ .faq-cont { display:block; }
+.faq-cont {height:0;transform: scaleY(0);overflow: hidden;color:#777; transition:transform 0.3s ease-out; transform-origin: top;}
